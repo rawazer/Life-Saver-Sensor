@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmergencyScreen">
+
+    <TextView
+        android:id="@+id/EmergencyTxt"
+        android:layout_width="168dp"
+        android:layout_height="74dp"
+        android:text="MESSAGE SENT, HELP ON ITS WAY"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="175dp" />
+    <ImageView
+        android:id="@+id/CancelBtn"
+        android:layout_width="347dp"
+        android:layout_height="223dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+        tools:layout_editor_absoluteX="28dp" />
+
+    <TextView
+        android:id="@+id/TimerMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time to cancel:"
+        app:layout_constraintBottom_toTopOf="@+id/CancelBtn"
+        app:layout_constraintTop_toBottomOf="@+id/EmergencyTxt"
+        tools:layout_editor_absoluteX="176dp" />
+
+    <TextView
+        android:id="@+id/Timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        app:layout_constraintBottom_toTopOf="@+id/CancelBtn"
+        app:layout_constraintTop_toBottomOf="@+id/TimerMsg"
+        tools:layout_editor_absoluteX="187dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
